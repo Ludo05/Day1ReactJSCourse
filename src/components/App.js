@@ -8,8 +8,8 @@ import {NavBar} from './NavBar'
 import {Books} from './Books'
 
 class App extends React.Component {
-  constructor() {
-    super();
+  constructor(props) {
+    super(props);
     this.state = {
       menu: { open: false }
     }
@@ -29,7 +29,7 @@ class App extends React.Component {
           isOpen={this.state.menu.open}
           toggleMenu={this.toggleMenu}
         />
-        <NavBar toggleMenu={e => this.toggleMenu(e)}/>
+        <NavBar toggleMenu={this.toggleMenu}/>
         <Header title="ReactJS Academy" />
         <Books />
         <About />
@@ -38,5 +38,4 @@ class App extends React.Component {
     )
   }
 }
-
 export default App

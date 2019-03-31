@@ -120,6 +120,12 @@ const books = [
     title: 'JavaScript for designer',
     cover: `${images}/design-javascript.jpg`,
     category: 'Design'
+  },
+  {
+    id: 22,
+    title: 'DevOps for Web development',
+    cover: `${images}/devops-web.jpg`,
+    category: 'DevOps'
   }
 ]
 
